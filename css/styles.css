@@ -19,6 +19,7 @@
   --main-font: "Roboto", sans-serif;
   --title-font: "Raleway", sans-serif;
 }
+
 html {
   box-sizing: border-box;
 }
@@ -365,6 +366,7 @@ body {
   height: 100%;
   border-radius: 50%;
 }
+
 .social-svg {
   fill: var(--icon-col);
 }
@@ -429,6 +431,7 @@ body {
 
 .footer .container {
   display: flex;
+  align-items: center;
 }
 
 .footer-block {
@@ -459,6 +462,11 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-col);
+  margin-bottom: 20px;
+}
+
+.foot-icon-bg {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .social-foot-svg {
