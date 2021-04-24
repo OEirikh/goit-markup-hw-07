@@ -176,6 +176,7 @@ body {
 /* hero */
 
 .hero {
+  display: flex;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -190,6 +191,8 @@ body {
     url("../images/hero.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main-title {
