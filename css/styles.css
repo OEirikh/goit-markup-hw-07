@@ -138,12 +138,29 @@ body {
   letter-spacing: 0.02em;
   color: var(--sub-title-col);
 }
+.menu-item {
+  position: relative;
+}
+
+.menu-item .current::after {
+  position: absolute;
+  bottom: -32px;
+  content: "";
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4px;
+  background-color: var(--acent-col);
+  border-radius: 2px;
+}
 
 .contacts {
   margin-left: auto;
 }
 
 .contacts-text {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -161,11 +178,6 @@ body {
 
 .contacts-menu-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.contacts .link {
-  display: flex;
-  align-items: center;
 }
 
 .contacts-svg {
@@ -277,6 +289,15 @@ body {
   background-color: var(--bg-head);
 }
 
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--sub-title-col);
+  text-align: center;
+}
+
 .direction .list {
   display: flex;
   flex-wrap: wrap;
@@ -291,13 +312,25 @@ body {
   margin-left: 30px;
 }
 
-.section-title {
-  margin-bottom: 50px;
+.direction-card {
+  position: relative;
+}
+
+.direction-caption {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--sub-title-col);
-  text-align: center;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-col);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Our team */
