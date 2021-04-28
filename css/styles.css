@@ -624,7 +624,7 @@ body {
   color: var(--main-text-col);
 }
 
-/* modal */
+/* Modal */
 
 .backdrop {
   position: fixed;
@@ -637,6 +637,7 @@ body {
 
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -645,18 +646,23 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
   min-width: 528px;
   min-height: 581px;
-  padding: 8px;
   background-color: var(--bg-head);
 }
 
-.close-modal {
-  display: block;
+.close-modal-btn {
+  position: absolute;
+  top: 8px;
+  left: 490px;
   width: 30px;
   height: 30px;
-  margin-left: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--bg-head);
+}
+
+.cross-svg {
+  fill: var(--logo-studio-col);
 }
