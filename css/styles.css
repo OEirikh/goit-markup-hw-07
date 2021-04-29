@@ -101,8 +101,6 @@ body {
 }
 
 .header .container {
-  padding-top: 24px;
-  padding-bottom: 25px;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -141,16 +139,31 @@ body {
   letter-spacing: 0.02em;
   color: var(--sub-title-col);
 }
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
 .menu-item {
   position: relative;
 }
 
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu a {
+  display: inline-flex;
+  align-items: center;
+  height: 80px;
+}
+
 .menu-item .current::after {
   position: absolute;
-  bottom: -32px;
+  bottom: -1px;
   content: "";
-  display: flex;
-  align-items: center;
+  display: block;
   width: 100%;
   height: 4px;
   background-color: var(--acent-col);
@@ -168,15 +181,6 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.menu {
-  display: inline-flex;
-  align-items: center;
-}
-
-.menu-item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .contacts-menu-item:not(:last-child) {
@@ -486,7 +490,10 @@ body {
 }
 
 .address-title {
-  color: var(--main-title-col);
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--main-title-col);
 }
 
 .footer-item {
