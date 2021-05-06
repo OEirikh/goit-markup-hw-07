@@ -833,6 +833,7 @@ body {
 }
 
 .label-checkbox {
+  display: inline-block;
 }
 
 .label-checkbox::after {
@@ -870,7 +871,7 @@ body {
   color: var(--acent-col);
 }
 
-.submit {
+.submit-btn {
   display: block;
   padding: 10px 55px;
   margin: 0 auto;
@@ -885,4 +886,9 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
+  transition: background-color 250ms var(--timing-function);
+}
+
+.submit-btn:hover {
+  background: #188ce8;
 }
