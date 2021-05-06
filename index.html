@@ -30,7 +30,7 @@
             <a class="link nav-text" href="./portfolio.html">Портфолио</a>
           </li>
           <li class="menu-item">
-            <a class="link nav-text" href="">Контакты</a>
+            <a class="link nav-text" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -359,7 +359,7 @@
     </section>
   </main>
   <!--Footer-->
-  <footer class="footer">
+  <footer class="footer" id="contacts">
     <div class="container">
       <div class="footer-block-addres">
         <p class="logo" lang="en">
@@ -416,8 +416,13 @@
       <div class="footer-block-form">
         <h3 class="subsсribe-title">Подпишитесь на рассылку</h3>
         <form>
-          <input class="subsсribe-input" type="mail" name="mail" placeholder="E-mail">
-          <button class="subsсribe-btn" type="submit">Подписаться</button>
+          <input class="subsсribe-input" type="email" name="mail" placeholder="E-mail" autocomplete="off">
+          <div class="subsсribe-btn-container">
+            <svg class="subsсribe-svg" width="24">
+              <use href="./images/sprite.svg#icon-send"></use>
+            </svg>
+            <button class="subsсribe-btn" type="submit">Подписаться</button>
+          </div>
         </form>
       </div>
     </div>
@@ -464,7 +469,8 @@
         <div class="agreement-conditions">
           <input class="check-agreement-conditions visually-hidden" type="checkbox" name="checkbox" id="checkbox" />
           <label class="label-checkbox" for="checkbox">Соглашаюсь с рассылкой и принимаю</label>
-          <a class="link-agreement-conditions" href="http://" target="_blank" rel="noopener noreferrer">Условия
+          <a class="link-agreement-conditions" href="https://www.apple.com/legal/privacy/uk/" target="_blank"
+            rel="noopener noreferrer">Условия
             договора</a>
         </div>
         <button class="submit-btn" type="submit">Отправить</button>
