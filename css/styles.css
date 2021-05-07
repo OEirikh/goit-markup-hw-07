@@ -238,6 +238,10 @@ body {
   margin: 0px auto;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 /* Features */
 
 .features {
@@ -568,6 +572,10 @@ body {
   border: none;
 }
 
+.subsсribe-btn:hover {
+  cursor: pointer;
+}
+
 .subsсribe-btn-container {
   position: relative;
   display: inline-block;
@@ -754,6 +762,10 @@ body {
   transition: fill 250ms var(--timing-function);
 }
 
+.close-modal-btn:hover {
+  cursor: pointer;
+}
+
 .close-modal-btn:hover .cross-svg,
 .close-modal-btn:focus .cross-svg {
   fill: var(--acent-col);
@@ -905,6 +917,8 @@ body {
   transition: background-color 250ms var(--timing-function);
 }
 
-.submit-btn:hover {
+.submit-btn:hover,
+.submit-btn:focus {
   background: #188ce8;
+  cursor: pointer;
 }
