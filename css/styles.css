@@ -49,7 +49,6 @@ img {
 body {
   font-family: var(--main-font);
   color: var(--main-text-col);
-  overflow-x: hidden;
 }
 
 .link {
@@ -59,8 +58,7 @@ body {
 }
 
 .link:hover,
-.link:focus,
-.list .current {
+.link:focus {
   color: var(--acent-col);
 }
 
@@ -95,12 +93,12 @@ body {
 
 /* Header */
 
-.header {
+.page-header {
   border-bottom: 1px solid var(--header-border);
   background-color: var(--bg-head);
 }
 
-.header .container {
+.page-header__container {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -108,7 +106,6 @@ body {
 
 .logo {
   display: inline-flex;
-  align-items: center;
   font-family: var(--title-font);
   font-weight: 700;
   font-size: 26px;
@@ -116,23 +113,40 @@ body {
   letter-spacing: 0.03em;
 }
 
-.header .logo {
+.page-header__logo {
   margin-right: 93px;
 }
 
-.blue {
+.logo__color-blue {
   color: var(--logo-web-col);
 }
 
-.black {
+.logo__color-black {
   color: var(--logo-studio-col);
 }
 
-.white {
+.logo__color-white {
   color: var(--alt-logo-studio-col);
 }
 
-.nav-text {
+.menu-nav,
+.menu-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.menu-nav__item {
+  position: relative;
+}
+
+.menu-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-nav__link {
+  display: inline-flex;
+  align-items: center;
+  height: 80px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -140,26 +154,11 @@ body {
   color: var(--sub-title-col);
 }
 
-.menu {
-  display: flex;
-  align-items: center;
+.menu-nav__link--current {
+  color: var(--acent-col);
 }
 
-.menu-item {
-  position: relative;
-}
-
-.menu-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.menu a {
-  display: inline-flex;
-  align-items: center;
-  height: 80px;
-}
-
-.menu-item .current::after {
+.menu-nav__link--current::after {
   position: absolute;
   bottom: -1px;
   content: "";
@@ -174,7 +173,11 @@ body {
   margin-left: auto;
 }
 
-.contacts-text {
+.menu-contacts__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.menu-contacts__link {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -183,11 +186,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contacts-menu-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.contacts-svg {
+.menu-contacts__svg {
   margin-right: 10px;
   fill: currentColor;
 }
