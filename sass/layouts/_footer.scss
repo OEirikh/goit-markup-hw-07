@@ -1,0 +1,23 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bg-foot);
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__address-block {
+  width: calc(100% / 12 * 3);
+}
+
+.footer__social-block {
+  padding-top: 12px;
+  width: calc(100% / 12 * 3);
+}
+
+.footer__subscribe-block {
+  padding-top: 12px;
+  width: calc(100% / 12 * 6);
+}

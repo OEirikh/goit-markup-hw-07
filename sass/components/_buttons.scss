@@ -1,0 +1,88 @@
+.btn {
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--title-main-col);
+  background: var(--acent-col);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin: 0px auto;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.subsсribe__btn {
+  width: 200px;
+  height: 50px;
+  padding: 10px 62px 10px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--logo-studio-alt-col);
+  background: var(--acent-col);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.subsсribe__btn:hover {
+  cursor: pointer;
+}
+
+.btn-close {
+  position: absolute;
+  top: 8px;
+  left: 490px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: var(--bg-head);
+}
+
+.btn-close:hover {
+  cursor: pointer;
+}
+
+.btn-close__svg {
+  fill: var(--logo-studio-col);
+  transition: fill 250ms var(--timing-function);
+}
+
+.btn-close:hover .btn-close__svg,
+.btn-close:focus .btn-close__svg {
+  fill: var(--acent-col);
+}
+
+.btn__modal-submit {
+  display: block;
+  padding: 10px 55px;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--logo-studio-alt-col);
+  background: var(--acent-col);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms var(--timing-function);
+}
+
+.btn__modal-submit:hover,
+.btn__modal-submit:focus {
+  background: #188ce8;
+  cursor: pointer;
+}
