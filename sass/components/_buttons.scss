@@ -42,9 +42,7 @@
 
 .btn-close {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
   top: 8px;
   left: 490px;
   width: 30px;
