@@ -20,21 +20,20 @@
   border-radius: 50%;
   border-color: var(--bg-head);
   transition: background-color 250ms var(--timing-function);
-}
-
-.social__link:hover,
-.social__link:focus {
-  background-color: var(--acent-col);
+  &:hover,
+  &:focus {
+    background-color: var(--acent-col);
+  }
 }
 
 .social__svg {
   fill: var(--icon-col);
   transition: fill 250ms var(--timing-function);
-}
 
-.social__link:hover .social__svg,
-.social__link:focus .social__svg {
-  fill: var(--bg-head);
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: var(--bg-head);
+  }
 }
 
 .social__link--foot {

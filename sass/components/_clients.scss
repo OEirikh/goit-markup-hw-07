@@ -5,10 +5,9 @@
 .clients__item {
   width: 170px;
   height: 92px;
-}
-
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients__link {
@@ -21,19 +20,19 @@
   border-color: var(--icon-col);
   border-radius: 4px;
   transition: border-color 250ms var(--timing-function);
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  border-color: var(--acent-col);
+  &:hover,
+  &:focus {
+    border-color: var(--acent-col);
+  }
 }
 
 .clients__svg {
   fill: var(--icon-col);
   transition: fill 250ms var(--timing-function);
-}
 
-.clients__link:hover .clients__svg,
-.clients__link:focus .clients__svg {
-  fill: var(--acent-col);
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--acent-col);
+  }
 }

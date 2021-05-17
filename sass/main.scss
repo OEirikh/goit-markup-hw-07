@@ -1,8 +1,8 @@
 @import "./utils/_variables.scss";
+@import "./utils/placeholders";
 
 @import "./base/common";
 @import "./base/container";
-@import "./base/section";
 @import "./base/hidden";
 
 @import "./components/logo";
@@ -16,7 +16,7 @@
 @import "./components/clients";
 @import "./components/address";
 @import "./components/subsсribe-form";
-@import "./components/filtr";
+@import "./components/filter";
 @import "./components/backdrop";
 @import "./components/modal";
 @import "./components/form";
@@ -24,6 +24,7 @@
 @import "./components/portfolio-list";
 @import "./components/overlay";
 
+@import "./layouts/section";
 @import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/features";

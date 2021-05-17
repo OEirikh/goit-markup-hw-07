@@ -1,8 +1,9 @@
-.subsсribe__input,
+.subsсribe {
+  position: relative;
+  display: inline-flex;
+}
+
 .address__text--contacts {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--alt-text-col);
 }
 
@@ -17,15 +18,11 @@
   background: transparent;
   outline: none;
   transition: border-color 250ms var(--timing-function);
-}
-.subsсribe__input:hover,
-.subsсribe__input:focus {
-  border-color: var(--acent-col);
-}
-
-.subsсribe {
-  position: relative;
-  display: inline-flex;
+  @extend %alt-col;
+  &:hover,
+  &:focus {
+    border-color: var(--acent-col);
+  }
 }
 
 .subsсribe__svg {

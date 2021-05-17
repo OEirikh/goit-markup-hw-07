@@ -12,9 +12,9 @@
   color: var(--title-main-col);
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms var(--timing-function);
-}
 
-.portfolio-list__link:hover .overlay,
-.portfolio-list__link:focus .overlay {
-  transform: translateY(0);
+  .portfolio-list__link:hover &,
+  .portfolio-list__link:focus & {
+    transform: translateY(0);
+  }
 }
